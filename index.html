@@ -14,31 +14,31 @@
     <!-- ======navbar========== -->
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <i class="fa-solid fa-location-dot nav-location"></i> &nbsp;Kharhar</a>
+          <a class="navbar-brand text-warning" href="#"> <i class="fa-solid fa-location-dot nav-location"></i> &nbsp;Kharhar</a>
           <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon rounded-pill "></span>
           </button>
           <div class="collapse navbar-collapse  " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
+                <a class="nav-link text-warning" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Verticals">Village Verticals</a>
+                <a class="nav-link text-warning" href="#Verticals">Village Verticals</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Committee"> Cimmitee</a>
+                <a class="nav-link text-warning" href="#Committee"> Commitee</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
+                <a class="nav-link text-warning" href="#contact">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex my-3" role="search">
               <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
+              <button class="btn btn-outline-warning rounded-pill" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -49,8 +49,9 @@
        
             <div class="hero">
                 <div class="hero-content" data-aos="fade-up">
-                    <h1>Welcome  <br> to <span class="stroke-text">Kharhar </span>Village </h1>
+                    <h1>Welcome  <br> <span class="stroke-text">Kharhar </span>Village </h1>
                     <p class="fs-5">This is official website of this village Kharhar</p>
+                    <marquee class="text-warning fs-2" behavior="" direction=""> This website under developemnt Process , devloper: Saifu</marquee>
                 </div>
             </div>
 
@@ -84,14 +85,30 @@
                         </div>
                       
                     </div>
+                    <span class="text-center text-secondary">Note: These images are temporary added for developemnt</span>
                     
                 </div>
-                <div class="col-md-6 my-5 " data-aos="fade-up">
-                    <p>Our village boasts lush green fields that sway gently in the breeze, inviting travelers to immerse themselves in the tranquility of nature. The rustic simplicity of our surroundings is complemented by the vibrant hues of local flora, painting a breathtaking canvas of natural beauty. </p>
+                <div class="col-md-6 my-3 " data-aos="fade-up" >
+                    <address>
+                        <span class="text-secondary">Locality Name</span> : Kharhar ( खरहर ) <br>
+                        <span class="text-secondary">Block Name</span> : Araria <br>
+                         <span class="text-secondary">District</span> : Araria <br>
+                        <span class="text-secondary">State</span> : Bihar <br>
+                         <span class="text-secondary">Division</span> : Purnia <br>
+                        <span class="text-secondary">Time</span> <span  id="time"></span> <br>
+                        <span class="text-secondary">Date</span> <span  id="Date"></span> <br>
 
-                       <p>At the heart of Kharhar lies its people, known for their hospitality and close-knit community spirit. Visitors are welcomed with open arms, invited to partake in our traditional festivals, cultural celebrations, and age-old rituals that have been passed down through generations.</p> 
                         
-                       <p> From the bustling village markets filled with the aroma of fresh produce to the melodious tunes of folk music that echo through the streets, Kharhar offers an immersive experience that captivates the senses and leaves a lasting impression on all who visit.</p>
+
+                        <span class="text-secondary" >Language</span> : Maithili and Hindi, Urdu, Thethi.</address>
+                       
+
+                       <p>Kharhar is small Village in Araria District of Bihar India. It comes under Rampur Mihanpur Panchatat.It is located 10 KM towards North from District head quarters Araria.  
+                    </p> 
+                        
+                       <p>It is located in the lush green fields of Bihar
+                        It is surrounded by Trees and Rivers .
+                        There are many farms in my village where we grow Rice, Wheat, vegetables and fruits</p>
                         
                      
                       
@@ -104,14 +121,15 @@
       <div class="container" id="Verticals" data-aos="fade-up">
         <h1 class="text-center my-3">Village  <span class="stroke-about"> Verticals </span></h1> 
         <div class="row ">
-            <div class="col-md-4 my-4" data-aos="fade-up">
+           <div class="col-md-4 my-4" data-aos="fade-up">
+            <a href="education.html"> 
                 <div class="card">
                     <i class="fa-solid fa-school text-center mt-3"></i>
                     <div class="card-body text-center">
                         Education
                     </div>
                 </div>
-            </div>
+            </div></a>
             <div class="col-md-4 my-4" data-aos="fade-up">
                 <div class="card">
                     <i class="fa-solid fa-hand-holding-medical mt-3 text-center"></i>
@@ -202,7 +220,7 @@
                                 <i class="fa-solid fa-location-dot info"></i> 
                             </div>
                             <address class="info-add">
-                                Post: Rampur Mohanpur East
+                                 Rampur Mohanpur East
                                 Araria Bihar 854311
                             </address>
                         </div>
@@ -234,24 +252,25 @@
                 
 
                     <div class="col-md-6 order-0 order-md-1" data-aos="fade-up">
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="14d8288e-fa09-4922-a5d3-92970358eb2a">
                             <div class="form-group" data-aos="fade-up">
                     
-                                <input type="text" class="form-control my-3" id="name" placeholder="Enter your name" data-aos="fade-up">
+                                <input type="text" name="name" class="form-control my-3" id="name" placeholder="Enter your name" data-aos="fade-up" required>
                             </div>
                             <div class="form-group">
                                
-                                <input type="text" class="form-control my-3" id="contact" placeholder="Enter your Phone Number" data-aos="fade-up">
+                                <input type="text" name="phone" class="form-control my-3" id="contact" placeholder="Enter your Phone Number" data-aos="fade-up" required>
                             </div>
                             <div class="form-group">
                               
-                                <input type="text" class="form-control my-3" id="address" placeholder="Enter your address" data-aos="fade-up">
+                                <input type="text" name="address" class="form-control my-3" id="address" placeholder="Enter your address" data-aos="fade-up" required>
                             </div>
                             <div class="form-group">
                               
-                                <input type="date" class="form-control my-3" id="date" data-aos="fade-up">
+                                <input type="date" name="date" class="form-control my-3" id="date" data-aos="fade-up" required>
                             </div>
-                            <select class="form-select my-3" aria-label="Default select example" data-aos="fade-up">
+                            <select class="form-select my-3"  name="issue_type" aria-label="Default select example" data-aos="fade-up" required>
                                 <option selected>Open this select menu</option>
                                 <option value="Theft">Theft</option>
                                 <option value="Fire">Fire</option>
@@ -261,7 +280,8 @@
                               
                            
                           
-                                <textarea class="form-control my-3" id="description" rows="3" placeholder="Write Your Complaint here." data-aos="fade-up"></textarea>
+                                <textarea class="form-control my-3" name="message" id="description" rows="3" placeholder="Write Your message here." data-aos="fade-up" required></textarea>
+                               
                        
                             <button type="submit" class="btn btn-outline-primary rounded-pill w-100 mb-5" data-aos="fade-up">Send Message</button>
                         </form>
@@ -275,13 +295,15 @@
         <!-- ================footer============== -->
         <footer>
             <div class="container" >
-                <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+                <p>&copy; 2024 Kharhar. All Rights Reserved.</p>
+                <p>This website is Developed by <span class="text-danger">SAIF</span> </p>
             </div>
         </footer>
 
 
       <script src="app.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
       <script>
         AOS.init();
       </script>

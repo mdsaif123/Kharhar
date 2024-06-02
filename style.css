@@ -25,7 +25,7 @@ body, html {
 }
 
 .nav-location{
-    color: orange;
+    color: rgb(217, 112, 43);
 }
 .hero {
     background-image: url('banner2.png');
@@ -80,11 +80,14 @@ body, html {
         border-radius: 30px;
         width: 95%;
     }
+    .school-slider{
+        margin-top: 80px;
+    }
    
 }
 span.stroke-text {
-    -webkit-text-stroke: 1px rgb(246, 26, 26); /* For webkit-based browsers like Chrome, Safari */
-    text-stroke: 1px rgb(229, 29, 29); /* Standard property */
+    -webkit-text-stroke: 1px rgb(232, 196, 40); /* For webkit-based browsers like Chrome, Safari */
+    text-stroke: 1px rgb(228, 186, 34); /* Standard property */
     color: rgba(255, 255, 255, 0); /* Set the color of the text */
 }
 span.stroke-about {
@@ -141,4 +144,12 @@ footer {
     background-color: #52e1528e;
     padding: 20px 0;
     text-align: center;
+}
+/* ========================= */
+.education-navbar{
+    background-color: rgba(29, 37, 30, 0.47);
+}
+.fa-check{
+    color: rgb(52, 212, 52);
+    font-weight: bold;
 }
