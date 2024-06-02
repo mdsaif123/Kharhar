@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300&family=Rajdhani:wght@300;400;500;600;700&family=Ubuntu&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    width: 98%;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(277, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    position: fixed; /* Fixed position so the navbar stays at the top */
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand{
+    padding-left: 15px;
+}
+
+.nav-location{
+    color: orange;
+}
+.hero {
+    background-image: url('banner2.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+@media(max-width:600px){
+    .navbar-brand{
+        padding-left: 5px;
+    }
+    .navbar{
+        border-radius: 30px;
+        width: 95%;
+    }
+   
+}
+span.stroke-text {
+    -webkit-text-stroke: 1px rgb(246, 26, 26); /* For webkit-based browsers like Chrome, Safari */
+    text-stroke: 1px rgb(229, 29, 29); /* Standard property */
+    color: rgba(255, 255, 255, 0); /* Set the color of the text */
+}
+span.stroke-about {
+    -webkit-text-stroke: 1px rgb(209, 73, 43); /* For webkit-based browsers like Chrome, Safari */
+    text-stroke: 1px rgb(228, 82, 41); /* Standard property */
+    color: rgba(255, 255, 255, 0); /* Set the color of the text */
+}
+.aboutus {
+    background-image: url('b4.png');
+    top: 0;
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    /* Add more background properties as needed */
+}
+
+.card i{
+    font-size: 40px;
+    color: rgb(203, 50, 50);
+}
+.card-body{
+    color: brown;
+}
+.fa-phone{
+    font-size: 10px  !important;
+}
+/* Add box shadow to an element */
+.card1{
+    box-shadow: 0px 0px 10px rgba(5, 4, 4, 0.528);
+    text-align: center; /* Horizontal offset, vertical offset, blur radius, color */
+    padding: 15px;
+    border-radius: 10px;
+}
+.card:hover{
+    background-color: rgba(194, 94, 94, 0.462);
+    color: white;
+
+}
+
+.info{
+    background-color: rgba(119, 205, 119, 0.56);
+    padding: 18px;
+    border-radius: 50%;
+}
+.info-add{
+    padding: 18px;
+}
+#contact{
+    background-image: url('b4.png');
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    /* Add more background properties as needed */
+}
+footer {
+    background-color: #52e1528e;
+    padding: 20px 0;
+    text-align: center;
+}
