@@ -32,3 +32,30 @@ function updateDate() {
 
 // Update the date immediately on page load
 updateDate();
+
+// ==============================prayers=================
+document.addEventListener("DOMContentLoaded", function() {
+    // Your city coordinates
+    const latitude = 26.133200;
+    const longitude = 87.458200;
+    
+    // Fetch prayer times from Aladhan API
+    fetch(`https://api.aladhan.com/timingsByAddress/09-03-2015?address=Dubai,UAE&method=8`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data); // Debugging: log the entire data object
+            const timings = data.data.timings;
+            document.getElementById("fajr").textContent = timings.Fajr;
+            document.getElementById("dhuhr").textContent = timings.Dhuhr;
+            document.getElementById("asr").textContent = timings.Asr;
+            document.getElementById("maghrib").textContent = timings.Maghrib;
+            document.getElementById("isha").textContent = timings.Isha;
+        })
+        .catch(error => console.error('Error fetching prayer times:', error));
+});
+

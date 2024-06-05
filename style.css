@@ -342,3 +342,71 @@ footer {
     background-color: rgba(197, 98, 98, 0.158); /* Semi-transparent overlay */
     z-index: 1;
 }
+/* ====================masjid=============== */
+
+.container1 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('masjid.jpg.crdownload');
+    background-size: cover;
+    background-position: center;
+}
+
+/* .text-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.708); 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.text-overlay p {
+    margin: 0;
+    font-size: 24px;
+} */
+
+.text-overlay {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%; /* Height adjusted to create gradient effect */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.978), rgba(0, 0, 0, 0)); /* Gradient from bottom to top */
+    display: flex;
+    align-items: flex-end; /* Align text at the bottom of the overlay */
+    justify-content: center; /* Center the text horizontally */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-overlay p {
+    margin: 0;
+    font-size: 24px;
+}
+#prayer-times {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bg{
+    border-radius: 25px;
+}
+.livcard:hover{
+    background-color: rgba(55, 145, 55, 0.409);
+}
