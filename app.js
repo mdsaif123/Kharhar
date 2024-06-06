@@ -59,3 +59,46 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Error fetching prayer times:', error));
 });
 
+ // Get the marquee element
+ const marquee = document.getElementById('scrolling-text');
+
+ // Add event listeners to stop and start scrolling on hover
+ marquee.addEventListener('mouseover', function() {
+     marquee.stop();
+ });
+
+ marquee.addEventListener('mouseout', function() {
+     marquee.start();
+ });
+
+
+ const apiKey = '8c78f246d1c546af911d2f68578c87e0';
+        const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+
+        async function fetchNews() {
+            const response = await fetch(url);
+            const data = await response.json();
+            return data.articles;
+        }
+
+        async function displayNews() {
+            const articles = await fetchNews();
+            const newsContainer = document.getElementById('news-container');
+            articles.forEach(article => {
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                const cardBody = `
+                    <img src="${article.urlToImage}" alt="${article.title}" class="card-img-top">
+                    <div class="card-body">
+                        <h3>${article.title}</h3>
+                        <p>${article.description}</p>
+                    </div>
+                `;
+
+                card.innerHTML = cardBody;
+                newsContainer.appendChild(card);
+            });
+        }
+
+        displayNews();
