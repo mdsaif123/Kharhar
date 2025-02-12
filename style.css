@@ -7,6 +7,7 @@ body, html {
     height: 100%;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .navbar{
     font-family: "Rajdhani", sans-serif;
@@ -90,6 +91,9 @@ body, html {
         width: 100%;
         height: 50px;
     }
+    .small-size{
+        display: none;
+    }
    
    
 }
@@ -149,9 +153,10 @@ span.stroke-about {
     /* Add more background properties as needed */
 }
 footer {
-    background-color: #52e1528e;
+    background-color: #070707ee;
     padding: 20px 0;
     text-align: center;
+    color: white;
 }
 /* ========================= */
 .education-navbar{
@@ -316,7 +321,7 @@ footer {
 /* ===================nature=============== */
 
 .nature {
-    background-image: url('naturebanner.jpg');
+    background-image: url('nature-kh');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -324,7 +329,7 @@ footer {
     right: 0;
     z-index: -1;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 70vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,12 +357,12 @@ footer {
 }
 
 .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
     width: 100%;
     height: 100%;
-    background-image: url('masjid.jpg.crdownload');
+    background-image: url('masjid-kharhar1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -421,7 +426,7 @@ footer {
     right: 0;
     z-index: -1;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 30vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
