@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>Paschim Kharhar</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -73,9 +73,10 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active small-size">
+                            <div class="carousel-item active d-none d-lg-block small-size">
                                 <img src="masjid-kharhar1.jpg" class="d-block w-100" alt="...">
                             </div>
+                            
                             <!-- <div class="carousel-item">
                                 <img src="masjid-kharhar1.jpg" class="d-block w-100" alt="...">
                             </div>
@@ -89,7 +90,7 @@
                     
                 </div>
                 <div class="col-md-6 my-3 " data-aos="fade-up" >
-                    <address>
+                    <!-- <address>
                         <span class="text-secondary">Locality Name</span> : Kharhar West ( खरहर ) <br>
                         <span class="text-secondary">Block Name</span> : Araria <br>
                          <span class="text-secondary">District</span> : Araria <br>
@@ -100,15 +101,46 @@
 
                         
 
-                        <span class="text-secondary" >Language</span> : Maithili and Hindi, Urdu, Thethi.</address>
-                       
-
-                       <p>Kharhar is small Village in Araria District of Bihar India. It comes under Rampur Mihanpur Panchatat.It is located 10 KM towards North from District head quarters Araria.  
-                    </p> 
+                        <span class="text-secondary" >Language</span> : Maithili and Hindi, Urdu, Thethi.</address> -->
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td><span class="text-secondary">Locality Name</span></td>
+                                    <td>Kharhar West ( खरहर )</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-secondary">Block Name</span></td>
+                                    <td>Araria</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-secondary">District</span></td>
+                                    <td>Araria</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-secondary">State</span></td>
+                                    <td>Bihar</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-secondary">Division</span></td>
+                                    <td>Purnia</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-secondary">Time</span></td>
+                                    <td><span id="time"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-secondary">Date</span></td>
+                                    <td><span id="Date"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="text-secondary">Language</span></td>
+                                    <td>Maithili, Hindi, Urdu, Thethi.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         
-                       <p>It is located in the lush green fields of Bihar
-                        It is surrounded by Trees and Rivers .
-                        There are many farms in my village where we grow Rice, Wheat, vegetables and fruits</p>
+
+                   
                         
                         
                      
@@ -116,6 +148,15 @@
                 </div>
                 
             </div>
+            <div class="my-3 pb-3">
+                <p>Kharhar is small Village in Araria District of Bihar India. It comes under Rampur Mihanpur Panchatat.It is located 10 KM towards North from District head quarters Araria.  
+                </p> 
+                    
+                   <p>It is located in the lush green fields of Bihar
+                    It is surrounded by Trees and Rivers .
+                    There are many farms in my village where we grow Rice, Wheat, vegetables and fruits</p>
+            </div>
+           
         </div>
       </div>
       
@@ -298,19 +339,19 @@
                             <input type="hidden" name="access_key" value="14d8288e-fa09-4922-a5d3-92970358eb2a">
                             <div class="form-group" data-aos="fade-up">
                     
-                                <input type="text" name="name" class="form-control my-3" id="name" placeholder="Enter your name" data-aos="fade-up" required>
+                                <input type="text" name="name" class=" my-2" id="name" placeholder="Enter your name" data-aos="fade-up" required>
                             </div>
                             <div class="form-group">
                                
-                                <input type="text" name="phone" class="form-control my-3" id="contact" placeholder="Enter your Phone Number" data-aos="fade-up" required>
+                                <input type="text" name="phone" class=" my-2" id="contact" placeholder="Enter your Phone Number" data-aos="fade-up" required>
                             </div>
                             <div class="form-group">
                               
-                                <input type="text" name="address" class="form-control my-3" id="address" placeholder="Enter your address" data-aos="fade-up" required>
+                                <input type="text" name="address" class=" my-2" id="address" placeholder="Enter your address" data-aos="fade-up" required>
                             </div>
                             <div class="form-group">
                               
-                                <input type="date" name="date" class="form-control my-3" id="date" data-aos="fade-up" required placeholder="date">
+                                <input type="date" name="date" class=" my-2" id="date" data-aos="fade-up" required placeholder="date">
                             </div>
                             <!-- <select class="form-select my-3"  name="issue_type" aria-label="Default select example" data-aos="fade-up" required>
                                 <option selected>Open this select menu</option>
@@ -322,10 +363,10 @@
                               
                            
                           
-                                <textarea class="form-control my-3" name="message" id="description" rows="3" placeholder="Write Your message here." data-aos="fade-up" required></textarea>
+                                <textarea class=" my-2" name="message" id="description" rows="3" placeholder="Write Your message here." data-aos="fade-up" required></textarea>
                                
                        
-                            <button type="submit" class="btn btn-outline-primary rounded-pill w-100 mb-5" data-aos="fade-up">Send Message</button>
+                            <button type="submit" class=" form-sub-btn mb-4" data-aos="fade-up">Send Message</button>
                         </form>
                     </div>
 

@@ -1,3 +1,4 @@
+// =================== Time ==================
 function updateTime() {
     const timeElement = document.getElementById('time');
     const now = new Date();
@@ -15,8 +16,10 @@ function updateTime() {
 
 // Update the time immediately on page load
 updateTime();
+// Update the time every minute (60,000 milliseconds)
+setInterval(updateTime, 60000);
 
-// ===================date=================
+// =================== Date ==================
 function updateDate() {
     const dateElement = document.getElementById('Date');
     const now = new Date();
@@ -32,6 +35,7 @@ function updateDate() {
 
 // Update the date immediately on page load
 updateDate();
+
 
 // ==============================prayers=================
 document.addEventListener("DOMContentLoaded", function() {
